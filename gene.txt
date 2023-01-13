@@ -1,0 +1,11 @@
+That isn’t so good. Hopefully, you haven’t pushed it to github yet.
+
+My advice would be to remove the git files from that folder. You can do this on the terminal (or probably VSCode’s terminal).
+
+cd into the folder you want to remove git from.
+ls -a so you can see all the items (including hidden files/folders).
+rm -rf .git (This can be dangerous if you use the wrong path. Be very careful to get it right.)
+rm .gitignore if it exists.
+Again, be careful with that rm command. Only ever delete specific folders.
+
+Everything related to git is in the .git folder, so this effectively deletes version control from the folder in question. If you’ve already pushed it to github, you should just delete that repo on their website.
